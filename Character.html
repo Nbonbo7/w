@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Character｜非常食パイモン</title>
+<meta name="description" content="んぼんぼの原神攻略wiki">
+<meta property="og:description" content="んぼんぼの原神攻略wiki">
+<meta property="og:image" content="https://raw.githubusercontent.com/Paimon7/www/Character/main/img/f2d6a3a.png">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="./css/bar.css">
+<link rel="stylesheet" href="./css/Chinko.css">
+<link rel="stylesheet" href="./css/main.css">
+<style>
+.close {
+  color: #ECE5D8;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #4B4F59;
+  text-decoration: none;
+  cursor: pointer;
+}
+main {
+  margin-left: 80px;
+  overflow-y: auto;
+}
+.con {
+  border: 2px solid #4B4F59;
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  border-radius: 1rem;
+  background-color: #3E4556;
+  min-width: 90%;
+  max-width: 350rem;
+  text-align: center;
+  margin: 5rem;
+}
+@media(max-width:1024px) {
+  .con {
+    margin: 0.95rem;
+  }
+}
+</style>
+</head>
+<body>
+  <div id="app">
+    <div class="menu">
+      <ul>
+        <li class="list">
+          <a href="/www/home">
+            <span class="icon material-icons">home</span>
+            <span class="title">{{ currentLanguage.home }}</span>
+          </a>
+        </li>
+        <li class="list active">
+          <a href="/www/Character">
+            <span class="icon material-icons">person</span>
+            <span class="title">{{ currentLanguage.character }}</span>  
+          </a>
+        </li>
+        <li class="list">
+          <a href="/www/weapon">
+            <span class="icon material-icons">menu_book</span>
+            <span class="title">{{ currentLanguage.weapon }}</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="/www/artifact">
+            <span class="icon material-icons">light_mode</span>
+            <span class="title">{{ currentLanguage.artifact }}</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="/www/atsc">
+            <span class="icon material-icons">calculate</span>
+            <span class="title">{{ currentLanguage.atsc }}</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="/www/screenshot">
+            <span class="icon material-icons">photo</span>
+            <span class="title">{{ currentLanguage.screenshot }}</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="/www/help">
+            <span class="icon material-icons">help_outline</span>
+            <span class="title">{{ currentLanguage.help }}</span>
+          </a>
+        </li>
+        <li class="">
+          <a id="settingLink" v-on:click="toggleSettings">
+            <span class="icon material-icons">settings</span>
+            <span class="title">{{ currentLanguage.settings }}</span>
+          </a>
+        </li>
+        <div class="listar">
+          <li>
+            <a>
+              <span class="icon material-icons">arrow_forward_ios</span>
+            </a>
+          </li>
+        </div>
+      </ul>
+    </div>
+
+    <div id="settings" class="settings" v-show="showSettings">
+      <div class="settings-content">
+        <div class="genshin-modal-border">
+          <div class="genshin-modal-corner top-left"></div>
+          <div class="genshin-modal-corner top-right"></div>
+          <div class="genshin-modal-corner bottom-left"></div>
+          <div class="genshin-modal-corner bottom-right"></div>
+        </div>
+        <span class="close" @click="closeSettings">&times;</span>
+        <div class="settings-item">
+          <div class="settings-text"> 言語 </div>
+          <select name="language" id="language" v-model="selectedLanguage">
+            <option value="chs"> 简体中文 (Chinese Simplified) </option>
+            <option value="cht"> 繁體中文 (Chinese Traditional) </option>
+            <option value="en"> English </option>
+            <option value="fr"> Français </option>
+            <option value="de"> Deutsch </option>
+            <option value="es"> Español </option>
+            <option value="pt"> Português </option>
+            <option value="ru"> Русский </option>
+            <option value="ja"> 日本語 (Japanese) </option>
+            <option value="kr"> 한국어 (Korean) </option>
+            <option value="th"> ภาษาไทย (Thai) </option>
+            <option value="vi"> Tiếng Việt (Vietnam) </option>
+            <option value="id"> Bahasa Indonesia (Indonesian) </option>
+            <option value="tr"> Türkçe </option>
+            <option value="it"> Italiano </option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="cons">
+        <div class="filter-barc"><div class="c-selector"></div></div>
+        <h1 id="character">{{ currentLanguage.character }}</h1>
+        <div class="bord"></div>
+        <div id="CharacterInfo"></div>
+      </div>
+    </main>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+<script src="js/vue.js"></script>
+<script src="js/characters.js"></script>
+
+</body>
+</html>
