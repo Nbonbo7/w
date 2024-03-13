@@ -1234,41 +1234,5 @@
         "icon": "UI_EquipIcon_FishingRod",
         "awakenIcon": "UI_EquipIcon_FishingRod_Awaken",
         "rankLevel": 5
-    },
-    "10002": {
-        "nameTextMapHash": 2719832059,
-        "icon": "UI_EquipIcon_Sword_Template",
-        "awakenIcon": "UI_EquipIcon_Sword_Template_Awaken",
-        "rankLevel": 1
-    },
-    "10003": {
-        "nameTextMapHash": 500987603,
-        "icon": "UI_EquipIcon_Claymore_Template",
-        "awakenIcon": "UI_EquipIcon_Claymore_Template_Awaken",
-        "rankLevel": 1
-    },
-    "10004": {
-        "nameTextMapHash": 1595734083,
-        "icon": "UI_EquipIcon_Pole_Template",
-        "awakenIcon": "UI_EquipIcon_Pole_Template_Awaken",
-        "rankLevel": 1
-    },
-    "10005": {
-        "nameTextMapHash": 2009975571,
-        "icon": "UI_EquipIcon_Catalyst_BookTemplate",
-        "awakenIcon": "UI_EquipIcon_Catalyst_BookTemplate_Awaken",
-        "rankLevel": 1
-    },
-    "10006": {
-        "nameTextMapHash": 4162981171,
-        "icon": "UI_EquipIcon_Catalyst_Template",
-        "awakenIcon": "UI_EquipIcon_Catalyst_Template_Awaken",
-        "rankLevel": 1
-    },
-    "10008": {
-        "nameTextMapHash": 3762437019,
-        "icon": "UI_EquipIcon_Bow_Template",
-        "awakenIcon": "UI_EquipIcon_Bow_Template_Awaken",
-        "rankLevel": 1
     }
 }
