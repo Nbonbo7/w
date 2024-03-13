@@ -1,1 +1,1 @@
-[HOME](https://nbonbo7.github.io/www/home)
+[HOME](https://nbonbo7.github.io/w/home)
