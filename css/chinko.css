@@ -280,7 +280,7 @@ textarea {
 }
 
 /* キャラクター情報、武器情報 */
-#characterInfo,
+#CharacterInfo,
 #WeaponsInfo {
     justify-content: center;
     flex-wrap: wrap;
